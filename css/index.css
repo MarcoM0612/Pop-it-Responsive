@@ -162,7 +162,7 @@ body {
 }
 .section-4 {
     display: flex;
-    height: 36rem;
+    height: 38rem;
     flex-direction: column;
 }
 .content-en-tus-manos {
@@ -189,6 +189,43 @@ body {
     width: 27rem;
     height: 16rem;
     border-radius: 2rem;
+}
+/* Footer */
+.footer {
+    background-color: var(--Dark-Charcoal);
+}
+.pre-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.widget {
+    padding-top: 3rem;
+}
+.widget a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.menu-pop-it {
+    padding: 0;
+}
+.menu-pop-it__item {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-pop-it__item a {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    color: white;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
 }
 /**Propiedades de los container*/
 .container {
@@ -259,18 +296,12 @@ body {
     justify-content: space-around;
     padding-bottom: 5rem;
 }
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .item-3 {
     margin-bottom: 0;
 }
 /* Seccion Pop it en tus Manos */
 .pop-it-en-tus-manos {
-    background-position-y: center;
+    background-position-x: center;
 }
 .section-4 {
     flex-direction: row;
@@ -293,22 +324,52 @@ body {
     height: 21rem;
     border-radius: 0;
 }
+/* footer */
+.pre-footer {
+    flex-direction: row;
+}
+.widget {
+    padding-top: 0;
+    flex: 1;
+}
+.menu-pop-it {
+    padding: 0;
+}
+.menu-pop-it__item {
+    flex-direction: row;
+    padding: 0;
+    gap: 5rem;
+}
+
 }
 @media ( min-width: 992px ) {
     .container {
         max-width: 98rem;
         padding: 0 3.2rem;
     }
+    /* Propiedades de Pop it en tus Manos */
     .img-pop-it-en-tus-manos {
         left: -8rem;
     }
     .section-4 {
         gap: 17rem;
     }
+    /* propiedad de Footer */
+    .menu-pop-it__item {
+        flex-direction: row;
+        padding: 0;
+        gap: 11rem;
+    }
 }
 @media ( min-width: 1200px ) {
     .container {
         max-width: 114rem;
         padding: 0 4rem;
+    }
+    /* propiedad de Footer */
+    .menu-pop-it__item {
+        flex-direction: row;
+        padding: 0;
+        gap: 16rem;
     }
 }
